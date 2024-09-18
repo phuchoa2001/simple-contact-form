@@ -1,0 +1,16 @@
+@mixin button-variant($background, $border, $hover-background, $hover-border, $active-background, $active-border) {
+  color: #fff;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover {
+    background-color: $hover-background;
+    border-color: $hover-border;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $active-background;
+    border-color: $active-border;
+  }
+}

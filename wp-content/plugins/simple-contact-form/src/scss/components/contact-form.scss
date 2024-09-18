@@ -1,0 +1,37 @@
+.scf_c-contact-form {
+  &__field {
+    margin-bottom: $spacing-medium;
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: $spacing-small;
+  }
+
+  &__input {
+    @extend .e-input;
+  }
+
+  &__submit {
+    @extend .scf_e-button;
+    @include button-variant($color-primary, $color-primary, darken($color-primary, 7.5%), darken($color-primary, 10%), darken($color-primary, 10%), darken($color-primary, 12.5%));
+  }
+
+  &__message {
+    margin-top: $spacing-medium;
+    padding: $spacing-small;
+    border-radius: 0.25rem;
+
+    &--success {
+      background-color: lighten($color-success, 40%);
+      border: 1px solid $color-success;
+      color: darken($color-success, 10%);
+    }
+
+    &--error {
+      background-color: lighten($color-danger, 40%);
+      border: 1px solid $color-danger;
+      color: darken($color-danger, 10%);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.scf_e-button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: $spacing-small $spacing-medium;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
